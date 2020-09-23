@@ -1,0 +1,19 @@
+---
+title: "traffic"
+author: "Dain Yoo"
+date: "9/23/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+
+##Data Load
+
+```{r cars}
+terror <- globalterrorismdb_0919dist
+
+```
