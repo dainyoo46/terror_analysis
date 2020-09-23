@@ -15,5 +15,9 @@ library(tidyverse)
 
 ```{r cars}
 terror <- globalterrorismdb_0919dist
+terror %>%
+  group_by(country_txt) %>%
+  summarize(sum(success))
 
+ggplot(data = terror, aes(x=iyear, y = success)) + geom_bar
 ```
